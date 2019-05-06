@@ -19,7 +19,7 @@ function Post(props) {
                         <i className="far fa-comment fa-2x"></i>
                         <h4>{data.likes} likes</h4>
                         <CommentSection comments={data.comments}/>
-                        <p className="timestamp">{moment().startOf(data.timestamp).fromNow()}</p>
+                        <p className="timestamp">{moment().startOf('day').fromNow()}</p>
                     </div>
                 </div>
             ))} 
