@@ -1,11 +1,13 @@
 .searchBar {
-    width: 800px;
+    width: 900px;
     height: 75px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    margin-left: 300px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid grey;
 
     .leftSide {
         display: flex;
