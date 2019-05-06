@@ -1,5 +1,6 @@
 import React from "react";
 import CommentSection from '../CommentSection/CommentSection.js';
+import moment from 'moment';
 import PropTypes from 'prop-types';
 
 function Post(props) {
@@ -11,7 +12,7 @@ function Post(props) {
                     <h4>{data.username}</h4>
                     <img src={data.imageUrl} alt="from post"/>
                     <CommentSection comments={data.comments}/>
-                    <p>{data.timestamp}</p>
+                    {moment().startOf(data.timestamp).fromNow()}
                 </div>
             ))} 
         </div>
@@ -23,7 +24,6 @@ Post.propTypes = {
         thumbnailUrl: PropTypes.string.isRequired,
         username: PropTypes.string.isRequired,
         imageUrl: PropTypes.string.isRequired,
-        timestamp: PropTypes.string.isRequired
 
     })).isRequired
 }
