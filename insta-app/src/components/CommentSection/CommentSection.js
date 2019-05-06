@@ -1,16 +1,16 @@
 import React from 'react';
-import Comment from './Comment'
+import Comment from './Comment';
+import './CommentSection.scss';
 
 function CommentSection(props) {
-    console.log("comment section: ", props)
     return (
-        <>
+        <div className="commentSection">
             <Comment data={props.comments}/>
             <input 
                 type="text"
-                placeholder = "Add a comment..."
+                placeholder="Add a comment..."
             />
-        </>
+        </div>
     )
 }
 

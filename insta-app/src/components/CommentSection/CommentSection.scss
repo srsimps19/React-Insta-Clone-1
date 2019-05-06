@@ -1,0 +1,31 @@
+.commentSection {
+    margin: 0;
+
+    .comments {
+        width: 640px;
+
+        .comment {
+            display: flex;
+
+            h4 {
+                margin: 5px 5px 5px 10px;
+            }
+
+            p {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    input {
+        width: 620px;
+        height: 40px;
+        padding: 0;
+        border-top: 1px solid grey;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}

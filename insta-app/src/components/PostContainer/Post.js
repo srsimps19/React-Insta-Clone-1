@@ -17,7 +17,7 @@ function Post(props) {
                     <div className="belowPicture">
                         <i className="far fa-heart fa-2x"></i>
                         <i className="far fa-comment fa-2x"></i>
-                        <p>{data.likes} likes</p>
+                        <h4>{data.likes} likes</h4>
                         <CommentSection comments={data.comments}/>
                         <p className="timestamp">{moment().startOf(data.timestamp).fromNow()}</p>
                     </div>
