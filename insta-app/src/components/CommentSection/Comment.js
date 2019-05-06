@@ -6,6 +6,7 @@ function Comment(props){
         <div>
             {props.data.map(data => 
                 <><h4>{data.username}</h4><p>{data.text}</p></>)}
+
         </div>
     )
 }
