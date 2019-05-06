@@ -12,7 +12,7 @@ function Post(props) {
                     <h4>{data.username}</h4>
                     <img src={data.imageUrl} alt="from post"/>
                     <CommentSection comments={data.comments}/>
-                    {moment().startOf(data.timestamp).fromNow()}
+                    <p>{moment().startOf(data.timestamp).fromNow()}</p>
                 </div>
             ))} 
         </div>
