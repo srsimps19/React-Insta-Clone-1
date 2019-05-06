@@ -9,7 +9,7 @@ function PostContainer(props) {
                     <img src={data.thumbnailUrl} alt={data.username}/>
                     <h4>{data.username}</h4>
                     <img src={data.imageUrl} alt="from post"/>
-                    <CommentSection data={props.comments}/>
+                    <CommentSection comments={data.comments}/>
                 </div>
             ))} 
         </div>
