@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBar.scss';
 
-function SearchBar() {
+function SearchBar(props) {
     return (
         <div className="searchBar">
             <div className="leftSide">
@@ -13,6 +13,7 @@ function SearchBar() {
                 <input
                     type="text"
                     placeholder="🔍 Search"
+                    onChange={props.searchPost}
                 />
             </div>
             <div className="rightSide">
