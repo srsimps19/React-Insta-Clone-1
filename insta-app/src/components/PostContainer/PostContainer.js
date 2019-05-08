@@ -4,6 +4,7 @@ import './PostContainer.scss'
 
 function PostContainer(props) {
     return (
+        
         <Post data={props.data}/>
     )
 }

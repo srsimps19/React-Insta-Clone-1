@@ -5,8 +5,8 @@ import './CommentSection.scss';
 function Comment(props){
     return(
         <div className="comments">
-            {props.data.map(data => 
-                <div className='comment'><h4>{data.username}</h4><p>{data.text}</p></div>)}
+            {props.data.map((data,i) => 
+                <div className='comment' key={i}><h4>{data.username}</h4><p>{data.text}</p></div>)}
 
         </div>
     )
