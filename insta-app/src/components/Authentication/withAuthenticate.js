@@ -1,12 +1,24 @@
 import React from 'react';
 
-const WithAuthenticate = PostPage => 
+const withAuthenticate = PostsPage => Login =>
     class extends React.Component {
-        render() {
-            return (
-                <PostPage />
-            )
+        state = {
+            loggedIn: false
         }
-}
-
-export default WithAuthenticate;
+    
+        componentDidMount() {
+            if (!localStorage.getItem('user')) {
+                this.setState({ loggedIn: false })
+            } else {
+                this.setState({ loggedIn: true })
+            }
+        }
+        
+        render() {
+            if (this.state.loggedIn) {
+                return <PostsPage />;
+            } 
+                return <Login />;
+        }
+    };
+export default withAuthenticate;
