@@ -9,9 +9,11 @@ class LikesButton extends React.Component {
     }
 
     handleClick = () => {
-        this.setState(() => ({
-          likes: this.state.likes + 1
-        }));
+        if (this.state.clicked === true){
+            this.setState({clicked: false, likes: this.state.likes -1})
+        } else {
+            this.setState({clicked: true, likes: this.state.likes +1})
+        }
       };
 
     render(){
