@@ -18,7 +18,7 @@ class App extends React.Component {
 
     searchPostsHandler = e => {
       const posts = this.state.data.filter(p => {
-        p.username.includes(e.target.value)
+        if (p.username.includes(e.target.value))
           return p;
       })
       this.setState({ filteredPost: posts});
