@@ -14,7 +14,7 @@ class CommentSection extends React.Component {
     addNewComment = (e,i) => {
         e.preventDefault()
         this.setState({
-            comments: [...this.state.comments, {username: "srsimps19",
+            comments: [...this.state.comments, {username: localStorage.getItem('user'),
                 text:this.state.input}]
         })
         this.setState({input: ""})

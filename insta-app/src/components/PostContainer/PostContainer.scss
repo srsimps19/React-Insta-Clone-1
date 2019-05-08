@@ -1,5 +1,5 @@
 .post {
-    width: 640px;
+    width: 642px;
     border-radius: 6px;
     border: 1px solid grey;
     margin-bottom: 10px;
@@ -14,12 +14,17 @@
             border-radius: 50%;
             padding: 5px 5px;
         }
+
+        h4 {
+            margin-top: 8px;
+        }
     }
 
     .belowPicture {
         text-align: start;
+        margin-top: 5px;
 
-        h4 {
+        p {
             margin-left: 10px;
         }
 

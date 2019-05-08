@@ -19,7 +19,7 @@ class LikesButton extends React.Component {
             <div className="likescontainer">
                 <i className="far fa-heart fa-2x" onClick={this.handleClick}></i>
                 <i className="far fa-comment fa-2x"></i>
-                <h4>{this.state.likes} likes</h4>
+                <p>{this.state.likes} likes</p>
             </div>
         )
     }
