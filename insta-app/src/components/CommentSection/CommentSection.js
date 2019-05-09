@@ -1,6 +1,21 @@
 import React from 'react';
 import Comment from './Comment';
-import './CommentSection.scss';
+import styled from 'styled-components';
+
+export const CommentSectionDiv = styled.div`
+    margin: 0;
+    
+    input {
+        width: 620px;
+        height: 40px;
+        padding: 0;
+        border-top: 1px solid grey;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        margin-left: 11px;
+        margin-top: 5px;
+    }`;
 
 class CommentSection extends React.Component {
     constructor(props) {
@@ -28,7 +43,7 @@ class CommentSection extends React.Component {
 
     render() {
         return (
-            <div className="commentSection">
+            <CommentSectionDiv>
                 <Comment data={this.state.comments}/>
                 <form onSubmit={this.addNewComment}>
                     <input 
@@ -38,7 +53,7 @@ class CommentSection extends React.Component {
                         onChange={this.handleChanges}
                     />
                 </form>
-            </div>
+            </CommentSectionDiv>
         )
     }
 }
