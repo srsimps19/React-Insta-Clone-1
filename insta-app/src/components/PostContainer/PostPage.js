@@ -3,7 +3,7 @@ import dummyData from '../../dummy-data';
 import PostContainer from './PostContainer';
 import SearchBar from '../SearchBar/SearchBar';
 import { Button } from 'reactstrap';
-import './PostContainer.scss';
+
 
 class PostPage extends React.Component {
     state = {
